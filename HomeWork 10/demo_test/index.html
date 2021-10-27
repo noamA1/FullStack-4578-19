@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>My web - "demo" test</title>
+</head>
+
+<body>
+    <!-- <h1 class="login">Login</h1>
+    <form action="#" onsubmit="login()">
+        <label for="userName-box">User Name:</label>
+        <input type="text" id="userName-box" placeholder="user name">
+        <label for="password-box">User Password:</label>
+        <input type="password" id="password-box" placeholder="Password">
+        <button class="login__btn">
+            Log in
+        </button>
+    </form> -->
+
+    <div class="container">
+        <h1 class="cars">Cars</h1>
+        <div class="row">
+            <label for="#"> Car Manufacturer:</label>
+            <input type="text" class="form-control" id="manufacturer" placeholder="Enter car manufacturer">
+        </div>
+        <div class="row">
+            <label for="#"> Car Model:</label>
+            <input type="text" class="form-control" id="model" placeholder="Enter car model">
+        </div>
+
+        <div class="row">
+            <button class="btn btn-primary" onclick="addCar()">Add</button>
+        </div>
+
+        <div class="row">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Manufacturer</th>
+                        <th scope="col">Model</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+        </div>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
