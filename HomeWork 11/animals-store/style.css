@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 35px 15px !important;
+  justify-content: center;
+}
+
+nav {
+  background-color: #e3f2fd;
+  font-family: "Markazi Text", serif;
+  font-size: 24px;
+}
+
+.header {
+  margin-top: 15px;
+  font-family: sans-serif;
+  height: 85vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(186, 200, 255, 0.6),
+      rgba(76, 110, 245, 0.6)
+    ),
+    url(../animals-store/images/header-pic.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.header__logo {
+  height: 70px;
+  background: transparent;
+}
+
+.header__text-box {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Markazi Text", serif;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 15px;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 16px;
+}
+
+.description__img {
+  width: 80%;
+  overflow: hidden;
+}
+
+.heading-seccondary {
+  font-size: 35px;
+  font-family: "Markazi Text", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(186, 200, 255),
+    rgb(76, 110, 245)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+}
+
+.paragraph {
+  font-size: 26px;
+  color: #868e96;
+  font-family: "Markazi Text", serif;
+}
+
+/* 
+---------------------------------------------------------------------------------------------
+    animal page style
+---------------------------------------------------------------------------------------------
+*/
+
+.gallery__heading-primary {
+  font-size: 50px;
+  font-family: "Markazi Text", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(116, 143, 252),
+    rgb(66, 99, 235)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+}
+
+.gallery__img {
+  width: 100%;
+  transition: all 0.2;
+}
+
+.gallery__img:hover {
+  transform: scale(1.15) translateY(-5px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 
+---------------------------------------------------------------------------------------------
+    Contect us page style
+---------------------------------------------------------------------------------------------
+*/
+
+.form-group,
+.form-check {
+  font-size: 26px;
+  color: #868e96;
+  font-family: "Markazi Text", serif;
+}
+button[type="button"] {
+  font-size: 20px;
+  width: 100px;
+}
+
+/* 
+---------------------------------------------------------------------------------------------
+    Save Page style
+---------------------------------------------------------------------------------------------
+*/
+
+.save__text-box {
+  color: #4263eb;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Markazi Text", serif;
+}
+
+.save__heading--main {
+  display: block;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.save__heading--sub {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+}
