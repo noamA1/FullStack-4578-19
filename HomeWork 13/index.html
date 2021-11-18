@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Work 13 - try, catch and throw exampelses and callback functions </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Try, catch and throw exampelses</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mr-2">
+                <h5>#1: check if the input is a number</h5>
+                <label for="numberCheck">Enter a number:</label>
+                <input type="text" id="numberCheck" placeholder="Please enter a number" class="form-control">
+
+                <a class="btn btn-primary" id="testInput">Test it</a>
+            </div>
+        </div>
+        <div class="row">
+            <h1>Callback functions</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#2: display name with callback funtion</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Light card title</h5> -->
+                        <p id="showName" class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" id="clickToDisplayName">Show it</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#3: display random number</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Light card title</h5> -->
+                        <p id="showRandomNumber" class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" id="getNum">Get your lucky number</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#4: display a given number</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Light card title</h5> -->
+                        <p id="showSecretNumber" class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" id="getSecretNum">Get the secret number</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#5: Show a random number from given 5 numbers</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Light card title</h5> -->
+                        <p id="showNumber" class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" id="clickToDisplayNumber">Show it</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#6: Paint the body background with a random color</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Light card title</h5> -->
+                        <p id="showSecretNumber" class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" id="getRandomColor">Paint</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#7: Paint the body background with a given color</h5>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" id="applyGivenColor">Paint</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#8: Paint the body background with one of three given colors</h5>
+                    </div>
+                    <div class="card-body">
+                        <p id="selectedColor"></p>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" id="chooseOneColorFromThreeColors">Paint Body</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title">#9: Get a random number every 1 sec</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="getRandomNumberIterval"></p>
+                        <div class="card-footer">
+                            <a id="randomNumber" class="btn btn-primary">Get random number</a>
+                            <a id="stopInterval" class="btn btn-primary">Stop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#10: Change the body background color every sec</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" id="startPaint">Start</a>
+                            <a class="btn btn-primary" id="stopPaint">Stop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h5>#11: Set new array with 100 random numbers every 3 sec</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="randomArray"></p>
+                        <div class="card-footer">
+                            <a class="btn btn-primary" id="startNewArray">Start</a>
+                            <a class="btn btn-primary" id="stop">Stop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
