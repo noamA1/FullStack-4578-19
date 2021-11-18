@@ -1,3 +1,7 @@
+/**
+ * Some comment for testing
+ **/
+
 // Helper functions
 const saveInLocalStorage = (key, value) => {
   //   userEmail = value;
