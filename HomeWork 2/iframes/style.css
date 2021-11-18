@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(246, 226, 188);
+}
+.continer {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(90, 90, 185);
+  font-size: 0.5em;
+  clear: both;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(65, 65, 107);
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 300px;
+}
+
+.col {
+  /* display: flex; */
+  float: left;
+  /* padding: 15px; */
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  width: 25%;
+}

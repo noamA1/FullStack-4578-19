@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Work 3</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>My Pet Store</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <img style src="istockphoto-509173668-612x612.jpg" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <canvas id="myCanvas" width="500" height="520"></canvas>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Pet type</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Hamster</td>
+                                <td>1</td>
+                                <td> 10 &#8362;</td>
+                                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYdKz2ccCE4-uXPpoxvuCWhoapmkYKtGrfpA&usqp=CAU"
+                                        class="tableImg"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Rabbit</td>
+                                <td>1</td>
+                                <td> 30 &#8362;</td>
+                                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc2EHzflyUgt8xbkQ5__q4bh9s0QubjwEP1g&usqp=CAU"
+                                        class="tableImg"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Percola fish</td>
+                                <td>2</td>
+                                <td> 20 &#8362;</td>
+                                <td><img src="https://www.aquarium-king.co.il/uploads/images/big58468.jpg"
+                                        class="tableImg"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Parrot fish</td>
+                                <td>2</td>
+                                <td> 25 &#8362;</td>
+                                <td><img src="https://www.aquarium-king.co.il/uploads/images/big58478.jpg"
+                                        class="tableImg"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Goldfish</td>
+                                <td>5</td>
+                                <td> 10 &#8362;</td>
+                                <td><img src="https://www.aquarium-king.co.il/uploads/images/big58488.jpg"
+                                        class="tableImg"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Pronto fish</td>
+                                <td>2</td>
+                                <td> 30 &#8362;</td>
+                                <td><img src="https://www.aquarium-king.co.il/uploads/images/big58474.jpg"
+                                        class="tableImg"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Plecostomus</td>
+                                <td>1</td>
+                                <td> 15 &#8362;</td>
+                                <td><img src="https://www.netfish.co.il/Pictures/201511343259.jpg?quality=60&w=500"
+                                        class="tableImg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4>Order your new pet</h4>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputFirstName">First Name</label>
+                                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputLastName">Last Name</label>
+                                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputPhone">Phone Number</label>
+                                <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="petType">Select your pet</label>
+                                <select class="form-control" id="petType">
+                                    <option></option>
+                                    <option>Goldfish</option>
+                                    <option>Hamster</option>
+                                    <option>Rabbit</option>
+                                    <option>Parrot</option>
+                                    <option>Percola</option>
+                                    <option>Pronto fish</option>
+                                    <option>Plecostomus</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="amount">Select Amount:</label>
+                                <select class="form-control" id="amount">
+                                    <option></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Order Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="#">about us</a>
+                </div>
+                <div class="col">
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col allRights">
+                    All Rights Reserved <span>&copy;</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

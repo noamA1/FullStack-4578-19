@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header-box {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(255, 199, 126);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#app_name {
+  /* float: right; */
+  margin: 20px;
+  width: 60%;
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(63, 124, 180);
+}
+
+#app_name:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.header-buttons {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+button {
+  cursor: pointer;
+  font-size: 1.5em;
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  /* margin-right: 10px; */
+  width: 50%;
+  height: 100%;
+  /* float: left; */
+  /* width: 100px; */
+  background: linear-gradient(
+    80deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(82, 177, 177) 36%,
+    rgb(0, 255, 170) 100%
+  );
+  color: #fff;
+}
+.header-buttons button:first-child {
+  margin-right: 10px;
+}
+.main,
+.box {
+  margin: 30px;
+}
+.main {
+  height: 100%;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background-color: rgb(69, 69, 165);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: width 2s, height 2s, transform 5s;
+}
+
+button:hover {
+  background: linear-gradient(
+    80deg,
+    rgba(0, 255, 89, 1) 0%,
+    rgba(100, 167, 221, 1) 25%,
+    rgba(2, 0, 36, 1) 60%
+  );
+}
+
+.box:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+  box-shadow: 15px 15px 15px grey;
+  overflow: hidden;
+}

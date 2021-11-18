@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.canvas {
+  box-shadow: 0 2px 5px #777;
+}
+.rectangleForm {
+  margin-top: 20px;
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #777;
+}
+
+.form-row {
+  gap: 20px;
+  justify-content: space-around;
+}
+
+#formBtn {
+  width: 100px;
+}
+
+.row-canvas {
+  justify-content: space-around;
+}
+
+#myCanvas {
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-top: 5%;
+}
