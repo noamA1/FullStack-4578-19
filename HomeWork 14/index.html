@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Work 14 - asyc exercises</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#1: Get time synchronous code</h5>
+                        <p class="card-text synchronous-time__start"></p>
+                        <p class="card-text synchronous-time__currntTime"></p>
+                        <p class="card-text synchronous-time__end"></p>
+                        <a class="btn btn-primary synchronous-time__button">Get time</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#2: Get time asynchronous code with 3 sec delay</h5>
+                        <p class="card-text asynchronous-time__start"></p>
+                        <p class="card-text asynchronous-time__end"></p>
+                        <p class="card-text asynchronous-time__currntTime"></p>
+                        <a class="btn btn-primary asynchronous-time__button">Get time</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#3: Get the time that was three seconds</h5>
+                        <p class="card-text asynchronous-time-three-sec-ago__start"></p>
+                        <p class="card-text asynchronous-time-three-sec-ago__end"></p>
+                        <p class="card-text asynchronous-time-three-sec-ago__time"></p>
+                        <a class="btn btn-primary asynchronous-time-three-sec-ago__button">Get time</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#4: Show random numbers in asynchronous way</h5>
+                        <p class="card-text random-numbers__start"></p>
+                        <p class="card-text random-numbers__end"></p>
+                        <p class="card-text random-numbers__after-three-seconds"></p>
+                        <p class="card-text random-numbers__after-five-seconds"></p>
+                        <p class="card-text random-numbers__after-seven-seconds"></p>
+                        <a class="btn btn-primary random-numbers__button">Get the numbers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#5: Show new random number every second </h5>
+                        <label for="random-number">Enter a number:</label>
+                        <input type="number" value="50" id="random-number" placeholder="Please enter a number"
+                            class="form-control">
+                        <p class="card-text random-number__display"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card changeBackground">
+
+                    <div class="card-body">
+                        <h5 class="card-title">#6: Change the card background color every second </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card greenBackground">
+                    <div class="card-body">
+                        <h5 class="card-title">#7: Card background color green </h5>
+                        <a class="btn btn-primary getAlert">Try me :)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#8: Show random number after 5 second delay and by callback</h5>
+                        <p class="card-text callbackRandomNumber"></p>
+                        <a class="btn btn-primary callbackRandomNumber__button">Get the number</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#9: Show random number after 5 second delay and by callback with argument
+                        </h5>
+                        <p class="card-text callbackRandomNumberWithArgument"></p>
+                        <a class="btn btn-primary callbackRandomNumberWithArgument__button">Get the number</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#10: Show random number between two numbers after 5 second delay</h5>
+                        <p class="card-text callbackRandomNumberBetween"></p>
+                        <a class="btn btn-primary callbackRandomNumberbetween__button">Get the number</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#11: Show random even number between two numbers after 5 second delay
+                        </h5>
+                        <p class="card-text callbackRandomEvenNumber"></p>
+                        <a class="btn btn-primary callbackRandomEvenNumber__button">Get the number</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#12: Get user from "server"</h5>
+                        <p class="card-text getUser"></p>
+                        <a class="btn btn-primary getUser__button">Get user</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#13: Get grades from "server"</h5>
+                        <p class="card-text getGrades"></p>
+                        <a class="btn btn-primary getGrades__button">Get grades</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#14: Get user latitude and longitude</h5>
+                        <p class="card-text getLocation__latitude"></p>
+                        <p class="card-text getLocation__longitude"></p>
+                        <a class="btn btn-primary getLocation__button">Get location</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">#13: Get grades from "server"</h5>
+                        <p class="card-text clock"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
