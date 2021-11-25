@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  margin: auto;
+  border: 3px dotted #91a7ff;
+  border-radius: 7px;
+  /* align-items: center; */
+}
+
+
+.btn {
+  background-color: #b197fc;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: 500;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-align: center; */
+}

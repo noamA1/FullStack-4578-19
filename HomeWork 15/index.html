@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Work 15 - Promise</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row sevenBoom">
+            <div class="col col-md-5">
+                <h5>#1.1: 7 Boom, with setTimeout function </h5>
+                <div class="form-group">
+                    <label for="maxNumber">Maximum number: </label>
+                    <input type="number" class="form-control" id="sevenBoom__maxNumber"
+                        placeholder="Please enter an maximum number">
+                </div>
+                <div class="form-group">
+                    <label for="minNumber">Minimum number: </label>
+                    <input type="number" class="form-control" id="sevenBoom__minNumber"
+                        placeholder="Please enter an minimum number">
+                </div>
+                <p class="sevenBoom__timeoutResult"></p>
+                <a class="btn sevenBoom__getRandomNumber">Get your lucky number</a>
+            </div>
+            <div class="col col-md-5">
+                <h5>#1.2: 7 Boom, with await</h5>
+                <div class="form-group">
+                    <label for="maxNumberAwait">Maximum number: </label>
+                    <input type="number" class="form-control" id="sevenBoom__maxNumberAwait"
+                        placeholder="Please enter an maximum number">
+                </div>
+                <div class="form-group">
+                    <label for="minNumber">Minimum number: </label>
+                    <input type="number" class="form-control" id="sevenBoom__minNumberAwait"
+                        placeholder="Please enter an minimum number">
+                </div>
+                <p class="sevenBoom__awaitResult"></p>
+                <a class="btn sevenBoom__getRandomNumberAwait">Get your lucky number</a>
+            </div>
+        </div>
+        <div class="row prime">
+            <div class="col col-md-5">
+                <h5>#2.1: Prime, with setTimeout function </h5>
+                <div class="form-group">
+                    <label for="prime__maxNumber">Maximum number: </label>
+                    <input type="number" class="form-control prime__timeoutInput" id="prime__maxNumber"
+                        placeholder="Please enter an maximum number">
+                </div>
+                <div class="form-group">
+                    <label for="minNumber">Minimum number: </label>
+                    <input type="number" class="form-control prime__timeoutInput" id="prime__minNumber"
+                        placeholder="Please enter an minimum number">
+                </div>
+                <p class="prime__timeoutResult"></p>
+                <a class="btn prime__getRandomNumber">Check</a>
+            </div>
+            <div class="col col-md-5">
+                <h5>#2.2: Prime, with await</h5>
+                <div class="form-group">
+                    <label for="maxNumberAwait">Maximum number: </label>
+                    <input type="number" class="form-control prime__awaitInput" id="prime__maxNumberAwait"
+                        placeholder="Please enter an maximum number">
+                </div>
+                <div class="form-group">
+                    <label for="minNumber">Minimum number: </label>
+                    <input type="number" class="form-control prime__awaitInput" id="prime__minNumberAwait"
+                        placeholder="Please enter an minimum number">
+                </div>
+                <p class="prime__awaitResult"></p>
+                <a class="btn prime__getRandomNumberAwait">Check</a>
+            </div>
+        </div>
+        <div class="row animal">
+            <div class="col col-md-5">
+                <h5>#3.1: Get cute animal, with setTimeout function </h5>
+                <p class="animal__timeoutResult"></p>
+                <a class="btn animal__getAnimalTimeout">Get your animal 🐶</a>
+            </div>
+            <div class="col col-md-5">
+                <h5>#3.2: Get cute animal, with await</h5>
+                <p class="animal__awaitResult"></p>
+                <a class="btn animal__getAnimalAwait">Get your animal 🐶</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
