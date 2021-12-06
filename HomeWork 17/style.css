@@ -1,0 +1,68 @@
+.hero {
+  height: 85vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(153, 233, 242, 0.8) 0%,
+      rgba(18, 184, 134, 0.8) 100%
+    ),
+    url(img/header.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.text-box {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.start-tour {
+  padding: 15px 30px;
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(197, 246, 250, 1) 0%,
+    rgba(16, 152, 173, 1) 100%
+  );
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 200px;
+}
+.start-tour:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.start-tour:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+}
+
+.weather-item {
+  list-style: none;
+}
+
+.row-button {
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.getUserButton {
+  margin-top: 10px;
+}
+.progress {
+  width: 100%;
+}
