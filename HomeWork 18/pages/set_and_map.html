@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Home Work 18 - Set, Map and Arrays functions</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="set_and_map.html">Sets and Maps</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="arrays.html">Arrays</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="heading">Home Work 18 - Data Structures </h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mr-2">
+                    <div class="card border-info mb-3">
+                        <div class="card-header">#1: Set of emails</div>
+                        <div class="card-body text-info">
+                            <h5 class="card-title">Set Size:</h5>
+                            <p class="card-text setSize"></p>
+                            <h5 class="card-title">Set Data:</h5>
+                            <p class="card-text setData"></p>
+                            <h5 class="card-title">Set has email:</h5>
+                            <p class="card-text hasEmail" hidden></p>
+                            <button type="button" class="btn btn-outline-info card-button">Check if exist</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mr-2">
+                    <div class="card border-info mb-3">
+                        <div class="card-header">#2: Set of names from user</div>
+                        <div class="card-body text-info">
+                            <h5 class="card-title">Set Size:</h5>
+                            <p class="card-text setFromUserSize"></p>
+                            <h5 class="card-title">Set Data:</h5>
+                            <p class="card-text setFromUserData"></p>
+
+                            <button type="button" class="btn btn-outline-info set-from-user-card__button">Add
+                                names</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 mr-2">
+                    <div class="card border-info mb-3">
+                        <div class="card-header">#3: Map of products</div>
+                        <div class="card-body text-info">
+                            <h5 class="card-title">Map Keys:</h5>
+                            <p class="card-text mapProductsKeys"></p>
+                            <h5 class="card-title">Map Values:</h5>
+                            <p class="card-text mapProductsValues"></p>
+                            <h5 class="card-title">Map Data:</h5>
+                            <p class="card-text mapProductsData"></p>
+                            <div class="result-has-key mb-3">
+                                <h5 class="card-title mapProductsHasKeyTitle"></h5>
+                                <p class="card-text mapProductsHasKey"></p>
+                            </div>
+                            <div class="result-one-product mb-3">
+                                <h5 class="card-title mapOneProductTitle"></h5>
+                                <p class="card-text mapOneProduct"></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info card-button__has-key mr-2">Check
+                                if exist</button>
+                            <button type="button" class="btn btn-outline-info card-button__display-product">Get your
+                                product</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mr-2">
+                    <div class="card border-info mb-3">
+                        <div class="card-header">#3: Map of cars</div>
+                        <div class="card-body text-info">
+                            <h5 class="card-title">Map Keys:</h5>
+                            <p class="card-text mapCarsKeys"></p>
+                            <h5 class="card-title">Map Values:</h5>
+                            <p class="card-text mapCarsValues"></p>
+                            <h5 class="card-title">Map Data:</h5>
+                            <p class="card-text mapCarsData"></p>
+                            <div class="result-has-key mb-3">
+                                <h5 class="card-title mapCarsHasKeyTitle"></h5>
+                                <p class="card-text mapCarsHasKey"></p>
+                            </div>
+                            <div class="result-one-Car mb-3">
+                                <h5 class="card-title mapOneCarTitle"></h5>
+                                <p class="card-text mapOneCar"></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info card-button__has-key-car mr-2">Check
+                                if exist</button>
+                            <button type="button" class="btn btn-outline-info card-button__display-car">Get your
+                                car</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../scripts/set_and_map_script.js"></script>
+
+</html>
