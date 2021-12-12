@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Home work 19 - JQuery</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exercises 1 and 2</h1>
+        <a href="../index.html">Home</a>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h2>#1: Copy from text input</h2>
+            </div>
+            <div class="row">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Input</th>
+                            <th scope="col">Button</th>
+                            <th scope="col">Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <div class="form-group">
+                                    <label for="first-input">First input</label>
+                                    <input type="text" class="form-control" id="first-input">
+                                </div>
+                            </td>
+                            <td><button type="button" class="btn btn-outline-secondary first-copy-button">Copy</button>
+                            </td>
+                            <td class="first-result"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>
+                                <div class="form-group">
+                                    <label for="second-input">Second input</label>
+                                    <input type="text" class="form-control" id="second-input">
+                                </div>
+                            </td>
+                            <td><button type="button"
+                                    class="btn btn-outline-secondary second-input-button">Copy</button></td>
+                            <td class="second-result"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+                <h2>#2: Set list with given numbers rang </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Set list</div>
+                        <div class="card-body text-secondary">
+                            <div class="form-group">
+                                <label for="first-number-input">First number</label>
+                                <input type="number" class="form-control" id="first-number-list-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="second-number-input">Second number</label>
+                                <input type="number" class="form-control" id="second-number-list-input">
+                            </div>
+                            <p class="card-text">
+                                <button type="button" class="btn btn-outline-secondary number-list-button">Fill
+                                    list</button>
+                            <div class="form-group number-list-container">
+                                <label for="number-list">List of numbers</label>
+                                <select class="form-control" id="number-list">
+                                </select>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../scripts/exercises_one_and_two_script.js"></script>
+
+</html>

@@ -1,0 +1,19 @@
+.boxs-container {
+  margin-top: 5%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 150px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.box {
+  border: 1.5px solid #000;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 500;
+}
