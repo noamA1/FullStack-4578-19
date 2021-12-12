@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="nav nav-tabs">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
             </li>
@@ -26,11 +26,118 @@
         </ul>
     </nav>
     <header>
-        <h1 class="heading">Home Work 18 - Array functions </h1>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="arrays.html">Numbers Array</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="random_dots.html">Dots Array</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="random_pizza.html">Pizzas Array</a>
+            </li>
+        </ul>
     </header>
 
     <main>
+        <div class="container">
+            <div class="row">
+                <h2>Random numbers array</h2>
+            </div>
+            <section class="section-cards">
+                <div class="row">
+                    <h3>Cards Section</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#1.1: Display random numbers array</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">Array Data:</h5>
+                                <p class="card-text arrayData"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#1.2: Display first even number in array</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The number is:</h5>
+                                <p class="card-text evenNumber"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#1.3: Display first number that bigger then 50</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The number is:</h5>
+                                <p class="card-text biggerThenFifty"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#1.4: Display all the odd numbers</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">Odd numbers array:</h5>
+                                <p class="card-text oddNumbers"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#1.5: Display all the odd numbers</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">All the numbers bigger then 50:</h5>
+                                <p class="card-text biggerThenFiftyNumbers"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#1.6: Display the index of first number that bigger then 50</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The index is:</h5>
+                                <p class="card-text indexOfBiggerThenFifty"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#1.8: Displaythe minimum number in array</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The minimum is:</h5>
+                                <p class="card-text minNumber"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#1.9: Displaythe maximum number in array</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The result is:</h5>
+                                <p class="card-text maxNumber"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="section-table">
+                <div class="row">
+                    <h3>Tables Section</h3>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="card-title">#1.7: Display if the number is odd or even
+                    </h5>
+                    <h6>The result is:</h6>
+                    <p class="card-text evenOrOdd"></p>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 <script src="../scripts/arrays_script.js"></script>

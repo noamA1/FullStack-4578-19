@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Home Work 18 - Set, Map and Arrays functions</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="set_and_map.html">Sets and Maps</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="arrays.html">Arrays</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link " href="arrays.html">Numbers Array</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="random_dots.html">Dots Array</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="random_pizza.html">Pizzas Array</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <h2>Random dots objects array</h2>
+            </div>
+            <section class="section-cards">
+                <div class="row">
+                    <h3>Cards Section</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#2.2: X possion bigger then Y possion</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The dot is:</h5>
+                                <p class="card-text xBiggerThenY"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#2.3: Display first object that Y bigger then 50</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The dot is:</h5>
+                                <p class="card-text yBiggerThenFifty"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#2.6: The index of the object that X bigger then 50</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The index is:</h5>
+                                <p class="card-text index-of-x-bigger-then-fifty"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#2.8: The minimal X</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The minimal X is:</h5>
+                                <p class="card-text minimal-x"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#2.9: The dot with the minimal X</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The dot is:</h5>
+                                <p class="card-text dot-with-minimal-x"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-tables">
+                <div class="row">
+                    <h3>Tables Section</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mr-2">
+                        <h5 class="table-cell__header">#2.1: Display random objects array</h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">X possion</th>
+                                    <th scope="col">Y possion</th>
+                                </tr>
+                            </thead>
+                            <tbody class="random-objects__table-body"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-3 mr-2">
+                        <h5 class="table-cell__header">#2.4: Display the dots where x is odd</h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">X possion</th>
+                                    <th scope="col">Y possion</th>
+                                </tr>
+                            </thead>
+                            <tbody class="odd-x-dots__table-body"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-3 mr-2">
+                        <h5 class="table-cell__header">#2.5: Display the dots where y is bigger then 50</h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">X possion</th>
+                                    <th scope="col">Y possion</th>
+                                </tr>
+                            </thead>
+                            <tbody class="y-bigger-then-fifty-dots__table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 mr-2">
+                        <h5 class="table-cell__header">#2.7: Display the distance of the dots from first the hinges
+                        </h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">X possion</th>
+                                    <th scope="col">Y possion</th>
+                                    <th scope="col">Distance</th>
+                                </tr>
+                            </thead>
+                            <tbody class="distance__table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="../scripts/random_dots_script.js"></script>
+
+</html>

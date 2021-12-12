@@ -54,3 +54,7 @@
 .inner-list-item {
   margin-left: 30px;
 }
+
+.row {
+  justify-content: center;
+}

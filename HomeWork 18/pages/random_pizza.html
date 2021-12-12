@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <title>Home Work 18 - Set, Map and Arrays functions</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="set_and_map.html">Sets and Maps</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="arrays.html">Arrays</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link " href="arrays.html">Numbers Array</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="random_dots.html">Dots Array</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="random_pizza.html">Pizzas Array</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <h2>Random pizza objects array</h2>
+            </div>
+            <section class="section-cards">
+                <div class="row">
+                    <h3>Cards Section</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#3.2: First pizza without toppings</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">the pizza is:</h5>
+                                <p class="card-text pizza-without-topping"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#3.3: First pizza cheaper than 30</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The pizza is:</h5>
+                                <p class="card-text pizza-cheaper-than"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#3.7: The index of 6 slices pizza </div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The index is:</h5>
+                                <p class="card-text pizza-six-slices-index"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#3.8: All pizzas radiuses </div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The radiuses are:</h5>
+                                <p class="card-text pizza-radiuses"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mr-2">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#3.10: Get sum of all prices </div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The sum of all prices:</h5>
+                                <p class="card-text pizza-sum-prices"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#3.11: The most expensive price </div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The price is:</h5>
+                                <p class="card-text pizza-max-price"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-info mb-3">
+                            <div class="card-header">#3.11: The most expensive pizza </div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">The pizza is:</h5>
+                                <p class="card-text pizza-max-price-object"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section-tables">
+                <div class="row">
+                    <h3>Tables Section</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mr-2">
+                        <h5 class="table-cell__header">#3.1: Display the pizzas array</h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Diameter</th>
+                                    <th scope="col">Slices</th>
+                                    <th scope="col">Toppings</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pizza__table-body"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4 mr-2">
+                        <h5 class="table-cell__header personal-pizza-table-head">#3.4: All the personal pizzas</h5>
+                        <table class="table table-sm personal-pizza-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Diameter</th>
+                                    <th scope="col">Slices</th>
+                                    <th scope="col">Toppings</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="personal-pizzas__table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mr-2">
+                        <h5 class="table-cell__header">#3.5: All the expensive pizzas</h5>
+                        <table class="table table-sm expensive-pizza-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Diameter</th>
+                                    <th scope="col">Slices</th>
+                                    <th scope="col">Toppings</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="expensive-pizzas__table-body"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4 mr-2">
+                        <h5 class="table-cell__header">#3.6: All the pizzas without toppings
+                        </h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Diameter</th>
+                                    <th scope="col">Slices</th>
+                                    <th scope="col">Toppings</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pizzas-without-toppings__table-body"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="table-cell__header">#3.9: Price objects</h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Vat</th>
+                                </tr>
+                            </thead>
+                            <tbody class="pizza-price-object__table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+    </main>
+</body>
+<script src="../scripts/random_pizzas_scripts.js"></script>
+
+</html>
