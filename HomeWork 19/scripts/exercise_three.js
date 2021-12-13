@@ -22,13 +22,19 @@ $(document).ready(function () {
 
   const displayNumbersAndColorOnBox = () => {
     let randomColor, randomNumber;
-
-    for (let index = 1; index <= 15; index++) {
+    $(".box").each(function (index) {
       randomNumber = getRandomNumber(0, 100);
       randomColor = getRandomColor();
-      $(`.box-number-${index}`).css("background-color", randomColor);
-      $(`.box-number-${index}`).text(randomNumber);
-    }
+      $(this).css("background-color", `${randomColor}`);
+      $(this).text(randomNumber);
+    });
+
+    // for (let index = 1; index <= 15; index++) {
+    //   randomNumber = getRandomNumber(0, 100);
+    //   randomColor = getRandomColor();
+    //   $(`.box-number-${index}`).css("background-color", randomColor);
+    //   $(`.box-number-${index}`).text(randomNumber);
+    // }
   };
   $(".random-number-color-button").click(() => {
     displayNumbersAndColorOnBox();
