@@ -4,12 +4,10 @@ $(document).ready(function () {
   let secondInputElement = $("#second-input");
 
   $(".first-copy-button").click(() => {
-    // console.log();
     $(".first-result").text(firstInputElement.val());
     firstInputElement.remove();
   });
   $(".second-input-button").click(() => {
-    // console.log();
     $(".second-result").text(secondInputElement.val());
     secondInputElement.remove();
   });

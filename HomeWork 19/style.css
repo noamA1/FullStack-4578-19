@@ -1,4 +1,96 @@
-.boxs-container {
+/* 
+    global style
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link,
+.navbar-brand {
+  background-color: transparent;
+  display: inline-block !important;
+}
+.nav-link:hover,
+.navbar-brand:hover {
+  background-color: transparent;
+}
+
+.exercise-sub-title {
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.page-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* 
+    index page style
+*/
+
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(208, 235, 255, 0.7) 0%,
+      rgba(77, 171, 247, 0.7) 100%
+    ),
+    url(img/header-img.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #212529;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+.start-tour {
+  padding: 15px 30px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(222, 226, 230, 1) 0%,
+    rgba(186, 200, 255, 1) 50%,
+    rgba(116, 143, 252, 1) 100%
+  ) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 200px;
+}
+.hero > .start-tour:hover {
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(222, 226, 230, 1) 0%,
+    rgba(186, 200, 255, 1) 50%,
+    rgba(116, 143, 252, 1) 100%
+  ) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.start-tour:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+}
+
+/* 
+    exercises 3, 4 and 5 style
+*/
+
+.boxes-container {
   margin-top: 5%;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -17,3 +109,69 @@
   font-size: 26px;
   font-weight: 500;
 }
+
+.box-red,
+.box-blue {
+  color: #fff;
+}
+.box-red {
+  background-color: #ff0000;
+}
+.box-blue {
+  background-color: #0000ff;
+}
+
+/* 
+   exercises 4 and 5 buttons style 
+*/
+.fade-out-in-buttons,
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clickable-box {
+  cursor: pointer;
+}
+
+/* 
+   exercise 6 list style 
+*/
+.weather-item {
+  list-style: none;
+}
+
+/*      
+   exercise 7 style 
+*/
+
+body {
+  font-family: Arial;
+}
+#menu > h3 {
+  width: 200px;
+  background-color: purple;
+  color: White;
+  font-weight: bold;
+  padding: 5px;
+}
+#menu > ul {
+  width: 200px;
+}
+#menu > ul > li {
+  list-style-type: none;
+}
+a {
+  display: block;
+  background-color: gray;
+  color: White;
+  padding: 5px;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px;
+}
+/* a:hover {
+  background: lime;
+  text-decoration: underline;
+} */
