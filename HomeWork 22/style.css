@@ -1,0 +1,60 @@
+.heading {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.section-whiteSpace {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+}
+.speker-section {
+  border: 1px solid #96f2d7;
+}
+.flashlight-section {
+  border: 1px solid #38d9a9;
+}
+.car-section {
+  border: 1px solid #0ca678;
+}
+.musicalInstruments-section {
+  border: 1px solid #099268;
+}
+
+.btn {
+  background: linear-gradient(
+    to right bottom,
+    rgba(150, 242, 215, 1) 0%,
+    rgba(9, 146, 104, 1) 100%
+  );
+  color: #fff;
+  font-weight: 600;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.musicalInstruments-section > .btn {
+  width: 10% !important;
+}
+
+.action-buttons {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-top: 15px;
+}
+
+li {
+  list-style: square;
+  color: #0ca678;
+  position: relative;
+}
+
+small {
+  position: absolute;
+  top: -1px;
+  right: 185px;
+}
