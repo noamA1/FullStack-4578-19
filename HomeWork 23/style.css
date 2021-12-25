@@ -1,0 +1,47 @@
+.heading {
+  text-align: center;
+  margin: 25px auto;
+}
+
+.section-whiteSpace {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+}
+.airport-staff-section {
+  border: 1px solid #74c0fc;
+}
+/* .flashlight-section {
+  border: 1px solid #38d9a9;
+} */
+
+.musicalInstruments-section {
+  border: 1px solid #a5d8ff;
+}
+
+.btn {
+  background: linear-gradient(
+    to right bottom,
+    rgba(165, 216, 255, 1) 0%,
+    rgba(34, 139, 230, 1) 100%
+  );
+  color: #fff;
+  font-weight: 600;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.big-button {
+  width: 80%;
+}
+
+ul {
+  margin-top: 15px;
+}
+
+li {
+  list-style: square;
+  color: #4dabf7;
+}
