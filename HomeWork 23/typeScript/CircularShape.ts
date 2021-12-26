@@ -1,0 +1,3 @@
+interface CircularShape {
+  getDiameter(): number;
+}

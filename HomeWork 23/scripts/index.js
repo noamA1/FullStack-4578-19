@@ -1,3 +1,4 @@
+import { Circle } from "./Circle.js";
 import { Drum } from "./Drum.js";
 import { FlightAttendant } from "./FlightAttendant.js";
 import { GrandPiano } from "./GrandPiano.js";
@@ -6,7 +7,10 @@ import { Guitar } from "./Guitar.js";
 import { Passenger } from "./Passenger.js";
 import { Piano } from "./Piano.js";
 import { Pilot } from "./Pilot.js";
-// global helper functions
+import { Rectangle } from "./Rectangle.js";
+import { Square } from "./Square.js";
+// global helper functions and variable
+const ARRAYS_LENGTH = 30;
 const getRandomNumber = (min, max) => {
     let number = Math.random() * (max - min) + min;
     if (number % 1 < 0.5) {
@@ -18,7 +22,6 @@ const getRandomNumber = (min, max) => {
     return number;
 };
 let musicalInstrumentObj;
-let musicalInstrumentArray = [];
 let drumObj = new Drum("Mapex", "Black Panther", "Brown", 14);
 let guitarObj = new Guitar("Kapok", "LC-14", "White", 6);
 let pianoObj = new Piano("Steinway & Sons", "Model V-125", "Black", 88);
@@ -33,10 +36,6 @@ const pianoDataTextElement = document.querySelector(".piano-data");
 const grandPianoDataTextElement = document.querySelector(".grandPiano-data");
 const randomMusicalIlnstrumentButton = document.querySelector(".random-musical-ilnstrument-button");
 const randomMusicalIlnstrumentText = document.querySelector(".random-musical-ilnstrument-data");
-musicalInstrumentArray.push(drumObj);
-musicalInstrumentArray.push(guitarObj);
-musicalInstrumentArray.push(pianoObj);
-musicalInstrumentArray.push(grandPianoObj);
 drumInfoButton.addEventListener("click", () => {
     drumObj.displayDrumData(drumDataTextElement);
 });
@@ -51,7 +50,20 @@ grandPianoInfoButton.addEventListener("click", () => {
 });
 randomMusicalIlnstrumentButton.addEventListener("click", () => {
     let randomNumber = getRandomNumber(0, 3);
-    musicalInstrumentObj = musicalInstrumentArray[randomNumber];
+    switch (randomNumber) {
+        case 0:
+            musicalInstrumentObj = drumObj;
+            break;
+        case 1:
+            musicalInstrumentObj = guitarObj;
+            break;
+        case 2:
+            musicalInstrumentObj = pianoObj;
+            break;
+        case 3:
+            musicalInstrumentObj = grandPianoObj;
+            break;
+    }
     musicalInstrumentObj instanceof Piano ||
         musicalInstrumentObj instanceof GrandPiano
         ? musicalInstrumentObj.displayData(randomMusicalIlnstrumentText, "piano", musicalInstrumentObj.pianoKeys)
@@ -68,16 +80,25 @@ const passengerInfoButton = document.querySelector(".passenger-info");
 const passengerDataTextElement = document.querySelector(".passenger-data");
 const randomAirportStaffButton = document.querySelector(".random-airport-staff-button");
 const randomAirportStaffTextElement = document.querySelector(".random-airport-staff-data");
+let staffObj;
 const pilotObj = new Pilot("Avigdor", "Goldstian", 10, 17283723);
 const flightAttendantObj = new FlightAttendant("Moshe", "Menchem", 2, "Israel", "First Calss");
 const groundAttendantObj = new GroundAttendant("Hila", "David", 5, "Israel", "Check-in clerk");
 const passengerObj = new Passenger("Avi", "Golan", 702837423);
-let staffAndPassengerArray = [];
-let staffObj;
-staffAndPassengerArray.push(pilotObj);
-staffAndPassengerArray.push(flightAttendantObj);
-staffAndPassengerArray.push(groundAttendantObj);
-staffAndPassengerArray.push(passengerObj);
+const displayStaffData = () => {
+    if (staffObj instanceof Passenger) {
+        staffObj.displayData(randomAirportStaffTextElement, "passenger", passengerObj.passportNumber);
+    }
+    else if (staffObj instanceof Pilot) {
+        staffObj.displayData(randomAirportStaffTextElement, "pilot", pilotObj.seniority);
+    }
+    else if (staffObj instanceof FlightAttendant) {
+        staffObj.displayData(randomAirportStaffTextElement, "flight-attendant", flightAttendantObj.department, flightAttendantObj.originCountry);
+    }
+    else if (staffObj instanceof GroundAttendant) {
+        staffObj.displayData(randomAirportStaffTextElement, "ground-attendant", groundAttendantObj.role, groundAttendantObj.originCountry);
+    }
+};
 pilotInfoButton.addEventListener("click", () => {
     pilotObj.displayPilotData(pilotDataTextElement);
 });
@@ -92,17 +113,56 @@ passengerInfoButton.addEventListener("click", () => {
 });
 randomAirportStaffButton.addEventListener("click", () => {
     let staffRandomNumber = getRandomNumber(0, 3);
-    staffObj = staffAndPassengerArray[staffRandomNumber];
-    if (staffObj instanceof Passenger) {
-        staffObj.displayData(randomAirportStaffTextElement, "passenger", passengerObj.passportNumber);
+    switch (staffRandomNumber) {
+        case 0:
+            staffObj = pilotObj;
+            break;
+        case 1:
+            staffObj = flightAttendantObj;
+            break;
+        case 2:
+            staffObj = groundAttendantObj;
+            break;
+        case 3:
+            staffObj = passengerObj;
+            break;
     }
-    else if (staffObj instanceof Pilot) {
-        staffObj.displayData(randomAirportStaffTextElement, "pilot", pilotObj.seniority);
+    displayStaffData();
+});
+// #3: Shapes
+const rectangleInfoButton = document.querySelector(".rectangle-info");
+const rectangleDataTextElement = document.querySelector(".rectangle-data");
+const squareInfoButton = document.querySelector(".square-info");
+const squareDataTextElement = document.querySelector(".square-data");
+const circleInfoButton = document.querySelector(".circle-info");
+const circleDataTextElement = document.querySelector(".circle-data");
+const randomShapeButton = document.querySelector(".random-shape-button");
+const randomShapeTextElement = document.querySelector(".random-shape-data");
+let circleObj = new Circle("Black", 5);
+let squareObj = new Square("Yellow", 6);
+let rectangleObj = new Rectangle("Blue", 5, 8);
+let shapeObj;
+rectangleInfoButton.addEventListener("click", () => {
+    rectangleObj.display(rectangleDataTextElement, "Rectangle");
+});
+squareInfoButton.addEventListener("click", () => {
+    squareObj.display(squareDataTextElement, "Square");
+});
+circleInfoButton.addEventListener("click", () => {
+    circleObj.display(circleDataTextElement, "Circle");
+});
+randomShapeButton.addEventListener("click", () => {
+    let randomShapeNumber = getRandomNumber(0, 2);
+    switch (randomShapeNumber) {
+        case 0:
+            shapeObj = rectangleObj;
+            break;
+        case 1:
+            shapeObj = squareObj;
+            break;
+        case 2:
+            shapeObj = circleObj;
+            break;
     }
-    else if (staffObj instanceof FlightAttendant) {
-        staffObj.displayData(randomAirportStaffTextElement, "flight-attendant", flightAttendantObj.department, flightAttendantObj.originCountry);
-    }
-    else if (staffObj instanceof GroundAttendant) {
-        staffObj.displayData(randomAirportStaffTextElement, "ground-attendant", groundAttendantObj.role, groundAttendantObj.originCountry);
-    }
+    shapeObj.display(randomShapeTextElement, "random-shape");
 });

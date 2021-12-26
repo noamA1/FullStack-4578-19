@@ -1,3 +1,4 @@
+import { Circle } from "./Circle.js";
 import { Drum } from "./Drum.js";
 import { FlightAttendant } from "./FlightAttendant.js";
 import { GrandPiano } from "./GrandPiano.js";
@@ -7,9 +8,14 @@ import { MusicalInstrument } from "./MusicalInstrument.js";
 import { Passenger } from "./Passenger.js";
 import { Piano } from "./Piano.js";
 import { Pilot } from "./Pilot.js";
+import { Rectangle } from "./Rectangle.js";
+import { Shape } from "./Shape.js";
+import { Square } from "./Square.js";
 import { Staff } from "./Staff.js";
 
-// global helper functions
+// global helper functions and variable
+
+const ARRAYS_LENGTH = 30;
 
 const getRandomNumber = (min: number, max: number): number => {
   let number = Math.random() * (max - min) + min;
@@ -22,7 +28,6 @@ const getRandomNumber = (min: number, max: number): number => {
 };
 
 let musicalInstrumentObj: MusicalInstrument;
-let musicalInstrumentArray: MusicalInstrument[] = [];
 let drumObj = new Drum("Mapex", "Black Panther", "Brown", 14);
 let guitarObj = new Guitar("Kapok", "LC-14", "White", 6);
 let pianoObj = new Piano("Steinway & Sons", "Model V-125", "Black", 88);
@@ -49,11 +54,6 @@ const randomMusicalIlnstrumentText = document.querySelector(
   ".random-musical-ilnstrument-data"
 );
 
-musicalInstrumentArray.push(drumObj);
-musicalInstrumentArray.push(guitarObj);
-musicalInstrumentArray.push(pianoObj);
-musicalInstrumentArray.push(grandPianoObj);
-
 drumInfoButton.addEventListener("click", () => {
   drumObj.displayDrumData(drumDataTextElement);
 });
@@ -70,7 +70,21 @@ grandPianoInfoButton.addEventListener("click", () => {
 
 randomMusicalIlnstrumentButton.addEventListener("click", () => {
   let randomNumber = getRandomNumber(0, 3);
-  musicalInstrumentObj = musicalInstrumentArray[randomNumber];
+  switch (randomNumber) {
+    case 0:
+      musicalInstrumentObj = drumObj;
+      break;
+    case 1:
+      musicalInstrumentObj = guitarObj;
+      break;
+    case 2:
+      musicalInstrumentObj = pianoObj;
+      break;
+    case 3:
+      musicalInstrumentObj = grandPianoObj;
+      break;
+  }
+
   musicalInstrumentObj instanceof Piano ||
   musicalInstrumentObj instanceof GrandPiano
     ? musicalInstrumentObj.displayData(
@@ -109,6 +123,7 @@ const randomAirportStaffTextElement = document.querySelector(
   ".random-airport-staff-data"
 );
 
+let staffObj: Staff;
 const pilotObj = new Pilot("Avigdor", "Goldstian", 10, 17283723);
 const flightAttendantObj = new FlightAttendant(
   "Moshe",
@@ -125,33 +140,8 @@ const groundAttendantObj = new GroundAttendant(
   "Check-in clerk"
 );
 const passengerObj = new Passenger("Avi", "Golan", 702837423);
-let staffAndPassengerArray: Staff[] = [];
-let staffObj: Staff;
 
-staffAndPassengerArray.push(pilotObj);
-staffAndPassengerArray.push(flightAttendantObj);
-staffAndPassengerArray.push(groundAttendantObj);
-staffAndPassengerArray.push(passengerObj);
-
-pilotInfoButton.addEventListener("click", () => {
-  pilotObj.displayPilotData(pilotDataTextElement);
-});
-
-flightAttendantInfoButton.addEventListener("click", () => {
-  flightAttendantObj.displayFlightAttendantData(flightAttendantDataTextElement);
-});
-
-groundAttendantInfoButton.addEventListener("click", () => {
-  groundAttendantObj.displayGroundAttendantData(groundAttendantDataTextElement);
-});
-
-passengerInfoButton.addEventListener("click", () => {
-  passengerObj.displayPassengerData(passengerDataTextElement);
-});
-
-randomAirportStaffButton.addEventListener("click", () => {
-  let staffRandomNumber = getRandomNumber(0, 3);
-  staffObj = staffAndPassengerArray[staffRandomNumber];
+const displayStaffData = (): void => {
   if (staffObj instanceof Passenger) {
     staffObj.displayData(
       randomAirportStaffTextElement,
@@ -179,4 +169,78 @@ randomAirportStaffButton.addEventListener("click", () => {
       groundAttendantObj.originCountry
     );
   }
+};
+pilotInfoButton.addEventListener("click", () => {
+  pilotObj.displayPilotData(pilotDataTextElement);
+});
+
+flightAttendantInfoButton.addEventListener("click", () => {
+  flightAttendantObj.displayFlightAttendantData(flightAttendantDataTextElement);
+});
+
+groundAttendantInfoButton.addEventListener("click", () => {
+  groundAttendantObj.displayGroundAttendantData(groundAttendantDataTextElement);
+});
+
+passengerInfoButton.addEventListener("click", () => {
+  passengerObj.displayPassengerData(passengerDataTextElement);
+});
+
+randomAirportStaffButton.addEventListener("click", () => {
+  let staffRandomNumber = getRandomNumber(0, 3);
+  switch (staffRandomNumber) {
+    case 0:
+      staffObj = pilotObj;
+      break;
+    case 1:
+      staffObj = flightAttendantObj;
+      break;
+    case 2:
+      staffObj = groundAttendantObj;
+      break;
+    case 3:
+      staffObj = passengerObj;
+      break;
+  }
+  displayStaffData();
+});
+
+// #3: Shapes
+const rectangleInfoButton = document.querySelector(".rectangle-info");
+const rectangleDataTextElement = document.querySelector(".rectangle-data");
+const squareInfoButton = document.querySelector(".square-info");
+const squareDataTextElement = document.querySelector(".square-data");
+const circleInfoButton = document.querySelector(".circle-info");
+const circleDataTextElement = document.querySelector(".circle-data");
+const randomShapeButton = document.querySelector(".random-shape-button");
+const randomShapeTextElement = document.querySelector(".random-shape-data");
+
+let circleObj = new Circle("Black", 5);
+let squareObj = new Square("Yellow", 6);
+let rectangleObj = new Rectangle("Blue", 5, 8);
+let shapeObj: Shape;
+
+rectangleInfoButton.addEventListener("click", () => {
+  rectangleObj.display(rectangleDataTextElement, "Rectangle");
+});
+squareInfoButton.addEventListener("click", () => {
+  squareObj.display(squareDataTextElement, "Square");
+});
+circleInfoButton.addEventListener("click", () => {
+  circleObj.display(circleDataTextElement, "Circle");
+});
+randomShapeButton.addEventListener("click", () => {
+  let randomShapeNumber = getRandomNumber(0, 2);
+  switch (randomShapeNumber) {
+    case 0:
+      shapeObj = rectangleObj;
+      break;
+    case 1:
+      shapeObj = squareObj;
+      break;
+    case 2:
+      shapeObj = circleObj;
+      break;
+  }
+  shapeObj.display(randomShapeTextElement, "random-shape");
 });

@@ -25,6 +25,7 @@
     rgba(165, 216, 255, 1) 0%,
     rgba(34, 139, 230, 1) 100%
   );
+  border: none;
   color: #fff;
   font-weight: 600;
   margin-right: 15px;
@@ -44,4 +45,11 @@ ul {
 li {
   list-style: square;
   color: #4dabf7;
+  position: relative;
+}
+
+li > small {
+  position: absolute;
+  top: -1px;
+  right: 50x;
 }
