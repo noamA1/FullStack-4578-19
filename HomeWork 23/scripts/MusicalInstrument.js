@@ -24,9 +24,6 @@ export class MusicalInstrument {
     get color() {
         return this._color;
     }
-    sound(message, type) {
-        this.showAlert(message, type);
-    }
     displayData(element, musicalInstrumentType, pianoKeys) {
         const listElement = document.createElement("ul");
         listElement.classList.add(`${musicalInstrumentType.toLowerCase()}-data-list`);

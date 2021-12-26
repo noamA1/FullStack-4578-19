@@ -28,10 +28,6 @@ export abstract class MusicalInstrument {
     return this._color;
   }
 
-  public sound(message: string, type: string) {
-    this.showAlert(message, type);
-  }
-
   public displayData(
     element: Element,
     musicalInstrumentType: string,

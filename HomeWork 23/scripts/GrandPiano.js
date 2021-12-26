@@ -44,9 +44,6 @@ export class GrandPiano extends Piano {
     get length() {
         return this._length;
     }
-    sound() {
-        super.sound("grandPiano");
-    }
     displayPianoData(grandPianoDataElement) {
         super.displayPianoData(grandPianoDataElement, "grandPiano");
         const dataList = document.querySelector(".grandpiano-data-list");

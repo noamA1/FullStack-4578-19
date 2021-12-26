@@ -41,7 +41,4 @@ export class Drum extends MusicalInstrument {
         diameterItem.innerHTML = `Diameter: ${this._diameter} cm`;
         dataList.append(diameterItem);
     }
-    sound() {
-        super.sound("Making Drum sound.. 🎶🎶🎶", "drum");
-    }
 }

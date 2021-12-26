@@ -34,9 +34,6 @@ export class Piano extends MusicalInstrument {
     get pianoKeys() {
         return this._pianoKeys;
     }
-    sound(pianoType) {
-        super.sound("Making Piano sound.. 🎶🎶 🎹", pianoType);
-    }
     displayPianoData(pianoDataElement, pianoTypeForList) {
         super.displayData(pianoDataElement, pianoTypeForList);
         let dataList;

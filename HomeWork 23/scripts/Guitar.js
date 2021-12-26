@@ -34,9 +34,6 @@ export class Guitar extends MusicalInstrument {
     get numberOfStrings() {
         return this._numberOfStrings;
     }
-    sound() {
-        super.sound("Making Guitar sound.. 🎶🎶 🎸🎸", "guitar");
-    }
     displayGuitarData(drumDataElement) {
         super.displayData(drumDataElement, "Guitar");
         const dataList = document.querySelector(".guitar-data-list");

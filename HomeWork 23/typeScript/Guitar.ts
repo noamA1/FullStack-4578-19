@@ -40,9 +40,6 @@ export class Guitar extends MusicalInstrument {
   public get numberOfStrings() {
     return this._numberOfStrings;
   }
-  public sound() {
-    super.sound("Making Guitar sound.. 🎶🎶 🎸🎸", "guitar");
-  }
 
   public displayGuitarData(drumDataElement: Element) {
     super.displayData(drumDataElement, "Guitar");
